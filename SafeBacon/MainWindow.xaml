@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SafeBacon"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <Label Content="SafeBacon"/>
-        <Button Content="Click me!" Click="onButtonClick"/>
-    </StackPanel>
+        Title="SafeBacon" Height="100" Width="800">
+    <Grid >
+        <Label Grid.Row="1" Grid.Column="1" Content="Username"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="Click me!" Click="onButtonClick"/>
+    </Grid>
 </Window>
