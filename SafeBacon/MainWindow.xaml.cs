@@ -19,10 +19,15 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+
+        // Add 8 rows and 8 columns
+        for (int i = 0; i < 8; i++)
+        {
+            MyGrid.RowDefinitions.Add(new RowDefinition());
+            MyGrid.ColumnDefinitions.Add(new ColumnDefinition());
+        }
     }
 
-    private void onButtonClick(object sender, RoutedEventArgs e)
-    {
-        MessageBox.Show("Your bacon has been saved!");
-    }
+    
+
 }
